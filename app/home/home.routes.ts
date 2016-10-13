@@ -1,14 +1,15 @@
 import { Routes, RouterModule }   from '@angular/router';
 import {ModuleWithProviders} from "@angular/core";
-
-import {HomeComponent} from './home/index';
+import { HomeComponent } from './index';
 
 const appRoutes: Routes = [
-    { path : '', component : HomeComponent },
-    { path : '**', redirectTo: ''}
+	{ path: 'home', component: HomeComponent
+		//,children : []
+		, redirectTo : ''
+	}
 ];
 
-export const appRoutingProviders: any[] = [
+export const moduleRoutingProviders: any[] = [
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

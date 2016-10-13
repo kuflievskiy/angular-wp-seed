@@ -8,10 +8,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { HttpModule }    from '@angular/http';
 
-//import { AlbumsComponent } from './albums.component';
-//import { ContactComponent } from './contact.component';
-//import {PhotoService} from './shared/services/photo.service';
-//import { AlbumModule } from './album/album.module';
+import { HomeModule } from './home/home.module';
 
 import {FormsModule, Form, ReactiveFormsModule} from "@angular/forms";
 
@@ -26,14 +23,16 @@ import {FormsModule, Form, ReactiveFormsModule} from "@angular/forms";
 	, ReactiveFormsModule
 	
 	// custom modules
-	// ..
+	,HomeModule
   ]
   ,declarations: [ 
 	AppComponent
 	
 	// custom components
  ]
-  ,bootstrap:    [ AppComponent ]
+  ,bootstrap:    [
+  	AppComponent
+	]
   ,providers:[
 	appRoutingProviders
 	,  {provide: LocationStrategy, useClass: HashLocationStrategy}
