@@ -4,8 +4,8 @@ import {ModuleWithProviders} from "@angular/core";
 import {HomeComponent} from './home/index';
 
 const appRoutes: Routes = [
-    { path : '', component : HomeComponent },
-    { path : '**', redirectTo: ''}
+    { path : '', component : HomeComponent }
+	//,{ path : '**', redirectTo: ''}
 ];
 
 export const appRoutingProviders: any[] = [

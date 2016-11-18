@@ -9,6 +9,7 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 import { HttpModule }    from '@angular/http';
 
 import { HomeModule } from './home/home.module';
+import { BlogModule } from './blog/blog.module';
 
 import {FormsModule, Form, ReactiveFormsModule} from "@angular/forms";
 
@@ -26,6 +27,7 @@ import {FormsModule, Form, ReactiveFormsModule} from "@angular/forms";
 	
 	// custom modules
 	,HomeModule
+	,BlogModule
   ]
   ,declarations: [ 
 	AppComponent

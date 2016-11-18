@@ -5,18 +5,19 @@ import {
 	HomeComponent
 	,routing
 	,moduleRoutingProviders
- } from './index';
+} from './index';
 
-import {PostsComponent} from "../shared/index";
+import {SharedModule} from "../shared/shared.module";
 
 @NgModule({
     imports: [
 		CommonModule
 		,routing
+
+		,SharedModule
 	],
     declarations: [	
 		HomeComponent
-		, PostsComponent
 	],
 	providers : [
 		moduleRoutingProviders
