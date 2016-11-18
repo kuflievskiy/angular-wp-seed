@@ -7,6 +7,8 @@ import {
 	,moduleRoutingProviders
  } from './index';
 
+import {PostsComponent} from "../shared/index";
+
 @NgModule({
     imports: [
 		CommonModule
@@ -14,10 +16,11 @@ import {
 	],
     declarations: [	
 		HomeComponent
+		, PostsComponent
 	],
 	providers : [
 		moduleRoutingProviders
 	]
 })
 
-export class HomeModule { }
+export class HomeModule {}

@@ -12,6 +12,8 @@ import { HomeModule } from './home/home.module';
 
 import {FormsModule, Form, ReactiveFormsModule} from "@angular/forms";
 
+
+
 @NgModule({
   imports:      [ 
 	BrowserModule 
@@ -27,7 +29,7 @@ import {FormsModule, Form, ReactiveFormsModule} from "@angular/forms";
   ]
   ,declarations: [ 
 	AppComponent
-	
+
 	// custom components
  ]
   ,bootstrap:    [
@@ -38,4 +40,4 @@ import {FormsModule, Form, ReactiveFormsModule} from "@angular/forms";
 	,  {provide: LocationStrategy, useClass: HashLocationStrategy}
   ]
 })
-export class AppModule { }
+export class AppModule {}

@@ -8,9 +8,8 @@ import { Component } from '@angular/core';
       <a routerLink="albums">MENU ITEM 1</a>
       <a routerLink="contact">MENU ITEM 2</a>    
     </nav>
-
 		<!-- Routed views go here -->
         <router-outlet></router-outlet>
   `
 })
-export class AppComponent { }
+export class AppComponent {}

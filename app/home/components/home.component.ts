@@ -4,9 +4,13 @@ import { Component } from '@angular/core';
     selector: 'home-component',
     template: `
         Home page content
+        <posts>
   `
 })
 
 export class HomeComponent {
 
+    constructor(){
+
+    }
 }
