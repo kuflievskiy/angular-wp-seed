@@ -41,7 +41,7 @@ export class PostsComponent {
 
     constructor(private postsService:PostsService){
         this.postsService
-            .getPosts('http://test.kuf.hulk.nixsolutions.com/wp-json/')
+            .getPosts()
             .subscribe((values)=>{
                 this.isPostsReady = true;
                 this.posts = values;

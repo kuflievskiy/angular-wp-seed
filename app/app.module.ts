@@ -1,5 +1,8 @@
-import { NgModule }      from '@angular/core';
+import { NgModule,enableProdMode }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import {environment} from "./environments/environment";
+
 import { AppComponent } from './app.component';
 
 import { routing, appRoutingProviders } from './app.routing';
@@ -13,7 +16,9 @@ import { BlogModule } from './blog/blog.module';
 
 import {FormsModule, Form, ReactiveFormsModule} from "@angular/forms";
 
-
+if (environment.production) {
+    enableProdMode();
+}
 
 @NgModule({
   imports:      [ 

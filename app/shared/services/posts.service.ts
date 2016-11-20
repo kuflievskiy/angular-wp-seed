@@ -7,24 +7,28 @@ import 'rxjs/add/operator/mergeMap'; // flatMap
 //import {Observable} from "rxjs";
 
 import {Post} from '../intefaces/post.interface';
+
+import {environment} from "./../../environments/environment";
+
 @Injectable()
 export class PostsService {
 
     private _http;
+	private _environment;
 
     constructor(_http: Http) {
         this._http = _http;
+		this._environment = environment;
     }
 
-    getPosts(baseURL){
+    getPosts(){
         return this._http
-                .get(baseURL + 'posts')
-                .map(x=>{
-                    return <Post>(<any>x).json();
-                })
-
-            ;
+			.get(environment.wpAPIUrl + 'posts')
+			.map(x=>{
+				return <Post>(<any>x).json();
+			});
     }
+
     // deletePost
     // DELETE /posts/<id>
 
