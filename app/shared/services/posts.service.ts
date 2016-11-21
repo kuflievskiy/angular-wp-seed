@@ -8,7 +8,7 @@ import 'rxjs/add/operator/mergeMap'; // flatMap
 
 import {Post} from '../intefaces/post.interface';
 
-import {environment} from "./../../environments/environment";
+import {environment} from "../../environments/environment";
 
 @Injectable()
 export class PostsService {
@@ -23,7 +23,7 @@ export class PostsService {
 
     getPosts(){
         return this._http
-			.get(environment.wpAPIUrl + 'posts')
+			.get(environment.WPAPI.endpoint + 'posts')
 			.map(x=>{
 				return <Post>(<any>x).json();
 			});

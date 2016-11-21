@@ -4,12 +4,10 @@ import {Router} from "@angular/router";
 @Component({
   selector: 'my-app',
   template: `
-    <header>
-    
+    <header>    
         <div class="navbar navbar-static-top navbar-dark bg-inverse">
             <div class="container-fluid">        
                 <div class="col-xs-2">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-header">&#9776;</button>
                     <a routerLink="/" class="navbar-brand">
                         <ng-content select=".slogan"></ng-content>
                     </a>
@@ -20,14 +18,13 @@ import {Router} from "@angular/router";
                         <a class="nav-link" routerLink="/" [class.active]="isActive('')">Home</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" routerLink="/blog" [class.active]="isActive('')">Blog</a>
+                        <a class="nav-link" routerLink="/blog" [class.active]="isActive('blog')">Blog</a>
                       </li>                      
                     </ul>
                 </div>
             </div>
-        </div>
-    
-</header>
+        </div>    
+    </header>
     <content>
         <!-- Routed views go here -->
         <router-outlet></router-outlet>

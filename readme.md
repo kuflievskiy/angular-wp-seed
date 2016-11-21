@@ -20,6 +20,7 @@ cd angular-wp-seed
 git clone https://github.com/kuflievskiy/angular-wp-seed.git .
 npm install
 npm start
+vim app/environments/environment.ts
 ```
 
 ## Contributing is appreciate
