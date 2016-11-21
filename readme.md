@@ -15,7 +15,7 @@ You should have installed WordPress site as a backend application part with thes
 ## How to set up project
 
 ```ssh
-touch angular-wp-seed
+mkdir angular-wp-seed
 cd angular-wp-seed
 git clone https://github.com/kuflievskiy/angular-wp-seed.git .
 npm install
