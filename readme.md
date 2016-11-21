@@ -2,6 +2,7 @@
 
 This project is based on <a href="https://github.com/angular/angular">Angular 2</a> (frontend) and <a href="https://github.com/WordPress/WordPress">WordPress</a> (backend).
 
+## Solution stack
 ![WordPress Logo](https://github.com/WordPress/WordPress/blob/master/wp-includes/images/w-logo-blue.png)
 ![Angular2 Logo](https://github.com/angular/angular.io/blob/master/public/resources/images/logos/angular2/angular-logo-banner.png)
 
@@ -18,3 +19,6 @@ You can help if you :
 - send pull-request
 - send patch
 - create an issue with bug/proposition
+
+## License
+- The MIT License is a permissive license that is short and to the point. It lets people do anything they want with your code as long as they provide attribution back to you and don't hold you liable.
