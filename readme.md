@@ -1,6 +1,6 @@
 # Angular WordPress Seed Project
 
-This project is based on <a href="https://github.com/angular/angular">Angular 2</a> (frontend) and <a href="https://github.com/WordPress/WordPress">WordPress</a> (backend).
+This project is based on <a href="https://github.com/angular/angular" target="_blank" title="Angular 2">Angular 2</a> (frontend) and <a href="https://github.com/WordPress/WordPress" target="_blank" title="WordPress">WordPress</a> (backend).
 
 ## Solution stack
 ![WordPress Logo](https://github.com/WordPress/WordPress/blob/master/wp-includes/images/w-logo-blue.png)
@@ -8,16 +8,25 @@ This project is based on <a href="https://github.com/angular/angular">Angular 2<
 
 ## WordPress site requirements (backend configuration)
 You should have installed WordPress site as a backend application part with these plugins installed : 
-- https://github.com/WP-API/WP-API
-- https://github.com/WP-API/Basic-Auth
+- <a href="https://github.com/WP-API/WP-API" target="_blank" title="WP REST API v2.0 (WP-API)">WP REST API v2.0 (WP-API)</a>
+- <a href="https://github.com/WP-API/Basic-Auth" target="_blank" title="Basic Authentication handler">Basic Authentication handler</a>
 
 ## How to set up project
 - @todo : add description here.
 
 ## Contributing is appreciate
 You can help if you : 
-- send pull-request
-- send patch
+- send pull-request (it's most appreciated)
+- send patch (as a real WordPress developer)
+```git
+git config --global diff.noprefix true
+
+#20425 - issue ID
+git diff --no-prefix > ~/#20425_updated_docblocks.diff
+
+# Apply patch
+patch -p0 < ~/#20425_updated_docblocks.diff
+```
 - create an issue with bug/proposition
 
 ## License
