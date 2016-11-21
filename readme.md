@@ -5,7 +5,7 @@ This project is based on <a href="https://github.com/angular/angular" target="_b
 ## Solution stack
 <a href="https://github.com/WordPress/WordPress">![WordPress Logo](https://github.com/WordPress/WordPress/blob/master/wp-includes/images/w-logo-blue.png)</a>
 <a href="https://github.com/angular/angular">![Angular2 Logo](https://github.com/angular/angular.io/blob/master/public/resources/images/logos/angular2/angular-logo-banner.png)</a>
-<a href="https://github.com/twbs/bootstrap"><img src="http://getbootstrap.com/assets/brand/bootstrap-solid.svg" align="left" height="80" width="80" alt="Twitter Bootstrap"></a>
+<a href="https://github.com/twbs/bootstrap"><img src="http://getbootstrap.com/assets/brand/bootstrap-solid.svg" height="80" width="80" alt="Twitter Bootstrap"></a>
 
 ## WordPress site requirements (backend configuration)
 You should have installed WordPress site as a backend application part with these plugins installed : 
