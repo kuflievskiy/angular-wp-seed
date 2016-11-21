@@ -12,7 +12,14 @@ You should have installed WordPress site as a backend application part with thes
 - <a href="https://github.com/WP-API/Basic-Auth" target="_blank" title="Basic Authentication handler">Basic Authentication handler</a>
 
 ## How to set up project
-- @todo : add description here.
+
+```ssh
+touch angular-wp-seed
+cd angular-wp-seed
+git clone https://github.com/kuflievskiy/angular-wp-seed.git .
+npm install
+npm start
+```
 
 ## Contributing is appreciate
 You can help if you : 
