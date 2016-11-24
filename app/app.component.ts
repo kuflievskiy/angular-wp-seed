@@ -38,7 +38,7 @@ export class AppComponent {
     this.router = router;
   }
 
-  isActive(slug): boolean {
+  isActive(slug:string): boolean {
     return this.router.isActive(slug,true);
   }
 }

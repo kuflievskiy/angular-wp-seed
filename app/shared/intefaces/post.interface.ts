@@ -26,7 +26,7 @@ export  interface Post {
     date_tz : string,
     except : string,
     featured_image : boolean|{
-        ID,
+        ID:number,
         attachment_meta:{
             file:string,
             height:number,

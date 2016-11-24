@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {PostsService} from "../services/posts.service";
+import {Post} from '../intefaces/post.interface';
 
 @Component({
     selector: 'posts',
@@ -13,7 +14,7 @@ import {PostsService} from "../services/posts.service";
                 </template>
                 <h4 class="card-title"><a href="{{post.link}}" title="{{post.title}}">{{post.title}}</a></h4>
                 <p class="card-text">{{post.except}}</p>              
-                <p class="card-text">Posted on {{post.date}} by {{post.author.nickname}}</p>                
+                <p class="card-text">Posted on {{post.date}} by {{post.author?.nickname}}</p>                
                 <a href="{{post.link}}" class="btn btn-primary">Read More</a>
               </div>
         </template>
@@ -36,13 +37,13 @@ import {PostsService} from "../services/posts.service";
 
 export class PostsComponent {
 
-    public posts = [];
+    public posts:Post[];
     public isPostsReady = false;
 
     constructor(private postsService:PostsService){
         this.postsService
             .getPosts()
-            .subscribe((values)=>{
+            .subscribe((values:Post[])=>{
                 this.isPostsReady = true;
                 this.posts = values;
             })

@@ -10,13 +10,13 @@ import {Page} from '../intefaces/page.interface';
 @Injectable()
 export class PagesService {
 
-    private _http;
+    private _http:Http;
 
     constructor(_http: Http) {
         this._http = _http;
     }
 
-    getPosts(baseURL){
+    getPosts(baseURL:string){
         return this._http
                 .get(baseURL + 'pages')
                 .map(x=>{

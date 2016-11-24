@@ -13,19 +13,20 @@ import {environment} from "../../environments/environment";
 @Injectable()
 export class PostsService {
 
-    private _http;
-	private _environment;
+    private _http:Http;
+	private _environment:Object;
 
     constructor(_http: Http) {
         this._http = _http;
 		this._environment = environment;
     }
 
-    getPosts(){
+    getPosts():Observable<Post[]>{
         return this._http
 			.get(environment.WPAPI.endpoint + 'posts')
 			.map(x=>{
-				return <Post>(<any>x).json();
+
+				return x.json();
 			});
     }
 
