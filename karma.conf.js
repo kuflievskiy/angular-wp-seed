@@ -14,6 +14,7 @@ module.exports = function(config) {
     plugins: [
       require('karma-jasmine'),
       require('karma-chrome-launcher'),
+      require('karma-phantomjs-launcher'),
       require('karma-jasmine-html-reporter'), // click "Debug" in browser to see it
       require('karma-htmlfile-reporter') // crashing w/ strange socket error
     ],
@@ -29,6 +30,7 @@ module.exports = function(config) {
     files: [
       // System.js for module loading
       'node_modules/systemjs/dist/system.src.js',
+      'node_modules/systemjs/dist/system-polyfills.js',
 
       // Polyfills
       'node_modules/core-js/client/shim.js',
@@ -98,7 +100,10 @@ module.exports = function(config) {
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
+    browsers: [
+        //'Chrome',
+        'PhantomJS'
+    ],
     singleRun: false
   })
 }
