@@ -13,7 +13,7 @@ import { HttpModule }    from '@angular/http';
 import { HomeModule } from './home/home.module';
 import { BlogModule } from './blog/blog.module';
 
-import {FormsModule, Form, ReactiveFormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
 if (environment.production) {
     enableProdMode();

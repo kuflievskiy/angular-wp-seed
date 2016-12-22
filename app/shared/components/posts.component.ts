@@ -12,8 +12,8 @@ import {Post} from '../intefaces/post.interface';
                       <img class="card-img-center" src="{{post.featured_image.attachment_meta.sizes.thumbnail.url}}" alt="{{post.title}}"/>
                       </a>
                 </template>
-                <h4 class="card-title"><a href="{{post.link}}" title="{{post.title}}">{{post.title}}</a></h4>
-                <p class="card-text">{{post.except}}</p>              
+                <h4 class="card-title"><a href="{{post.link}}" title="{{post.title.rendered}}">{{post.title.rendered}}</a></h4>
+                <p class="card-text" [innerHTML]="post.excerpt.rendered"></p>              
                 <p class="card-text">Posted on {{post.date}} by {{post.author?.nickname}}</p>                
                 <a href="{{post.link}}" class="btn btn-primary">Read More</a>
               </div>
@@ -46,6 +46,7 @@ export class PostsComponent {
             .subscribe((values:Post[])=>{
                 this.isPostsReady = true;
                 this.posts = values;
+                console.log(values);
             })
         ;
 

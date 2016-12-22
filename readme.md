@@ -8,8 +8,7 @@ This project is based on <a href="https://github.com/angular/angular" target="_b
 <a href="https://github.com/twbs/bootstrap"><img src="http://getbootstrap.com/assets/brand/bootstrap-solid.svg" height="80" width="80" alt="Twitter Bootstrap"></a>
 
 ## WordPress site requirements (backend configuration)
-You should have installed WordPress site as a backend application part with these plugins installed : 
-- <a href="https://github.com/WP-API/WP-API" target="_blank" title="WP REST API v2.0 (WP-API)">WP REST API v2.0 (WP-API)</a>
+You should have installed WordPress ( 4.7 or later ) site as a backend application part with these plugins installed : 
 - <a href="https://github.com/WP-API/Basic-Auth" target="_blank" title="Basic Authentication handler">Basic Authentication handler</a>
 
 ## How to set up project

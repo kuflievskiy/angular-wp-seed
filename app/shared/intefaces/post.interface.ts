@@ -24,7 +24,7 @@ export  interface Post {
     content : string,
     date_gmt : string,
     date_tz : string,
-    except : string,
+    excerpt : any,
     featured_image : boolean|{
         ID:number,
         attachment_meta:{

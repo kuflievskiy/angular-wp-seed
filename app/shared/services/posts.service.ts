@@ -25,7 +25,6 @@ export class PostsService {
         return this._http
 			.get(environment.WPAPI.endpoint + 'posts')
 			.map(x=>{
-
 				return x.json();
 			});
     }
