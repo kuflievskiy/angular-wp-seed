@@ -8,7 +8,7 @@ import 'rxjs/add/operator/mergeMap'; // flatMap
 
 import {Post} from '../intefaces/post.interface';
 
-import {environment} from "../../environments/environment";
+import {environment} from "../../../environments/environment";
 
 @Injectable()
 export class PostsService {

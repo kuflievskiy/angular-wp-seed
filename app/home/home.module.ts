@@ -7,14 +7,14 @@ import {
 	,moduleRoutingProviders
 } from './index';
 
-import {SharedModule} from "../shared/shared.module";
+import {PostsModule} from "../shared/posts/index";
 
 @NgModule({
     imports: [
 		CommonModule
 		,routing
 
-		,SharedModule
+		,PostsModule
 	],
     declarations: [	
 		HomeComponent

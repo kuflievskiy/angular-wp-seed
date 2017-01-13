@@ -12,6 +12,8 @@ import { HttpModule }    from '@angular/http';
 
 import { HomeModule } from './home/home.module';
 import { BlogModule } from './blog/blog.module';
+import { PageFooter } from './page-blocks/page-footer/page-footer.component';
+import { PageHeader } from './page-blocks/page-header/page-header.component';
 
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 
@@ -35,6 +37,8 @@ if (environment.production) {
   ,declarations: [ 
 	AppComponent
 
+	,PageHeader
+	,PageFooter
 	// custom components
  ]
   ,bootstrap:    [

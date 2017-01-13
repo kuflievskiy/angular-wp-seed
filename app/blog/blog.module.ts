@@ -7,14 +7,14 @@ import {
     ,moduleBlogRoutingProviders
 } from './index';
 
-import {SharedModule} from "../shared/shared.module";
+import {PostsModule} from "../shared/posts/index";
 
 @NgModule({
     imports: [
         CommonModule
         ,routingBlog
 
-        ,SharedModule
+        ,PostsModule
     ],
     declarations: [
         BlogComponent
