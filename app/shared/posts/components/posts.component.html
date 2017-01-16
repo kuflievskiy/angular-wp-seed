@@ -1,0 +1,18 @@
+ <template [ngIf]="isPostsReady">
+      <div *ngFor="let post of posts" class="card-block card">
+        <template [ngIf]="post.featured_image">
+              <a routerLink="{{router.url}}/{{post.slug}}" title="{{post.title}}">
+              <img class="card-img-center" src="{{post.featured_image.attachment_meta.sizes.thumbnail.url}}" alt="{{post.title}}"/>
+              </a>
+        </template>
+        <h4 class="card-title">
+            <a routerLink="{{router.url}}/{{post.slug}}" title="{{post.title.rendered}}">{{post.title.rendered}}</a></h4>
+        <p class="card-text" [innerHTML]="post.excerpt.rendered"></p>
+        <p class="card-text">Posted on {{post.date}} by {{post.author?.nickname}}</p>
+        <a routerLink="{{router.url}}/{{post.slug}}" class="btn btn-primary">Read More</a>
+      </div>
+</template>
+
+<div *ngIf="!isPostsReady">
+    Fetching the posts....
+</div>

@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import {
     BlogComponent
+    ,BlogSingleComponent
     ,routingBlog
     ,moduleBlogRoutingProviders
 } from './index';
@@ -18,6 +19,7 @@ import {PostsModule} from "../shared/posts/index";
     ],
     declarations: [
         BlogComponent
+        ,BlogSingleComponent
     ],
     providers : [
         moduleBlogRoutingProviders
